@@ -1,0 +1,55 @@
+html, body {
+	/* background: url(http://i.imgur.com/TkDc7Iq.jpg) no-repeat; */
+	/* background-size: cover; */
+	color: #F0F0F0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/* letter-spacing: 0.02em; */
+	background-color:#00A49d;
+	}
+a {
+	text-decoration:none;
+	color:#C0C0C0;
+	font-weight:550;
+	}
+a:hover {
+	text-decoration:underline;
+	}
+ul li {
+	list-style-type: none;
+	display:inline;
+	}
+img {
+	position:relative;
+	}
+.title {
+  font-size:24px;
+}
+.dg {
+	color:#C0C0C0;
+}
+.links {
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Mobile Devices */
+
+/*iPhone <5 */
+@media screen and (device-aspect-ratio: 2/3) {
+	}
+
+/*iPhone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+	    }
+/*iPhone 6 */
+@media screen and (device-aspect-ratio: 667/375) {
+	}
+
+/*iPhone 6+ */
+@media screen and (device-aspect-ratio: 16/9) {
+	}
+
+/* iPad */
+@media screen and (device-aspect-ratio: 3/4) {
+	}
+}
