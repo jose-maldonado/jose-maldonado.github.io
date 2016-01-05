@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../js/jquery.min.js"> </script>
+
+<script>
+
+$(document).ready(function(){
+  var items = []
+  $.getJSON('albums.json', function(data){
+    var i = 0;
+    for(i = 0; i < data.length; i++) {
+      console.log(i);
+      var album;
+      album = data[i].Album;
+      console.log(album);
+      var genre;
+      genre = data[i].Genre;
+      console.log(genre);
+      var img;
+      img = data[i].ImageURL;
+      console.log(img);
+
+      //turn items into array
+      items.push({
+      Album:album,
+      Genre:genre,
+      ImageURL:img
+    })};
+      return items;
+});
+});
+</script>
+</head>
+
+<body>
+
+{{items.genre}}
+
+</body>
+</html>
