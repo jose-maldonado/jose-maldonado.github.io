@@ -1,0 +1,17 @@
+[
+   {
+      "Album":"To Pimp A Butterfly",
+      "Genre":"Hip-Hop",
+      "ImageURL":"img/tpab.jpg"
+   },
+   {
+      "Album":"Good Kid, mAAd City",
+      "Genre":"Hip-Hop",
+      "ImageURL":"img/gkmc.jpg"
+   },
+   {
+      "Album":"Tidal",
+      "Genre":"Alternative Rock",
+      "ImageURL":"img/tidal.jpg"
+   }
+]
