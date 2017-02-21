@@ -1,13 +1,20 @@
 ---
-title: About Hagura
-layout: post
+layout: page
+title: About Pixyll
 permalink: /about/
-published: true
+tags: about
 ---
 
-For more themes please visit [https://blog.webjeda.com](https://blog.webjeda.com)
+This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
+([@4lpine](https://twitter.com/4lpine)).
 
-Does the theme deserve a star?
+Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
+request a feature, report a bug, or contribute. It's free, and open source
+([MIT](http://opensource.org/licenses/MIT)).
 
-<a class="github-button" href="https://github.com/sharu725/hagura" data-style="mega" data-count-href="/sharu725/hagura/stargazers" data-count-api="/repos/sharu725/hagura#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star sharu725/hagura on GitHub">Star</a>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+Thanks to the following:
+
+* [BASSCSS](http://basscss.com)
+* [Jekyll](http://jekyllrb.com)
+* [Refills](http://refills.bourbon.io/)
+* [Type Scale](http://type-scale.com/)
