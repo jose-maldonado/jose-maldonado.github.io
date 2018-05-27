@@ -38,14 +38,14 @@ function myFunction() {
     fingrade = 0;
     var x = document.getElementsByName("ex");
     for (var i = 0; i < x.length ;i++) {
-        total_exams += parseInt(x[i].value);
-        if (parseInt(x[0].value) > parseInt(x[i].value)) {
+        total_exams += parseFloat(x[i].value);
+        if (parseFloat(x[0].value) > parseFloat(x[i].value)) {
             min = parseInt(x[i].value);
         }
     }
     weighted_exams = total_exams/4 * 0.5;
-    weigted_qzs = parseInt(document.getElementsByName("qzs")[0].value)/68 * 100 * 0.25;
-    final = parseInt(document.getElementsByName("final")[0].value) * 0.25;
+    weigted_qzs = parseFloat(document.getElementsByName("qzs")[0].value)/68 * 100 * 0.25;
+    final = parseFloat(document.getElementsByName("final")[0].value) * 0.25;
     if (document.getElementById("checkBox").checked){
         weighted_exams = (weighted_exams * 4)/0.5 - min + (final/0.25)
         weighted_exams = weighted_exams/4 * 0.5
