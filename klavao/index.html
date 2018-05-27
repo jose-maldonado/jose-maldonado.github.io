@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kalculadora Firulistica</title>
+    </head>
+<body>
+
+<form id="frm1">
+    <h1>Kalculadora Firulistica</h1>
+        Ex1: <input type="text" name="ex" placeholder="Ex1"><br><br>
+        Ex2: <input type="text" name="ex" placeholder="Ex2"><br><br>
+        Ex3: <input type="text" name="ex" placeholder="Ex3"><br><br>
+        Ex4: <input type="text" name="ex" placeholder="Ex4"><br><br>
+        Qzs: <input type="text" name="qzs" placeholder="Quizzes"><br><br>
+        Ex_final: <input type="text" name="final" value="Final"><br><br>
+</form> 
+Final reemplaza peor nota? <input id="checkBox" type="checkbox"> 
+
+<p>Haz click en kalcular para ver cuan klavao vas en la clase :)</p>
+
+<button onclick="myFunction()">Kalcular</button>
+
+<p id="total"></p>
+
+<script>
+var total_exams = 0;
+var final = 0;
+var weighted_exams = 0;
+var weigted_qzs = 0;
+var fingrade = 0;
+var min = 0;
+function myFunction() {
+    total_exams = 0;
+    final = 0;
+    weighted_exams = 0;
+    weigted_qzs = 0;
+    fingrade = 0;
+    var x = document.getElementsByName("ex");
+    for (var i = 0; i < x.length ;i++) {
+        total_exams += parseInt(x[i].value);
+        if (parseInt(x[0].value) > parseInt(x[i].value)) {
+            min = parseInt(x[i].value);
+        }
+    }
+    weighted_exams = total_exams/4 * 0.5;
+    weigted_qzs = parseInt(document.getElementsByName("qzs")[0].value)/68 * 100 * 0.25;
+    final = parseInt(document.getElementsByName("final")[0].value) * 0.25;
+    if (document.getElementById("checkBox").checked){
+        weighted_exams = (weighted_exams * 4)/0.5 - min + (final/0.25)
+        weighted_exams = weighted_exams/4 * 0.5
+    }
+    fingrade = weighted_exams + weigted_qzs + final;
+    
+    document.getElementById("total").innerHTML = "Your grade is " +  weighted_exams + " in exams, " + weigted_qzs + " in quizzes, and " + final + " in the final, for a final grade of " + fingrade + " :)";
+}
+</script>
+
+</body>
+</html>
